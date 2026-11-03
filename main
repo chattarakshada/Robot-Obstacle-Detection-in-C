@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float distance;
+
+    printf("Enter Obstacle Distance (cm): ");
+    scanf("%f", &distance);
+
+    if (distance < 0)
+    {
+        printf("Invalid Distance\n");
+    }
+    else if (distance <= 10)
+    {
+        printf("Obstacle Detected! Stop Robot\n");
+    }
+    else
+    {
+        printf("Path Clear! Robot Can Move\n");
+    }
+
+    return 0;
+}
